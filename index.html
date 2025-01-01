@@ -1,0 +1,260 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DisasterWatchPH Responders App Download</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+                background-color: white;
+                color: black;
+                overflow: hidden;
+            }
+
+            .container {
+                width: 100%;
+                text-align: center;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                position: relative; /* Added for footer positioning */
+            }
+
+            .content-wrapper {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin: 0;
+                color: #C40233;
+            }
+
+            .tagline {
+                font-size: 1rem;
+                margin: 0;
+                color: #333;
+            }
+
+            .download-container {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 1rem 0rem;
+            }
+
+            .download-section {
+                background-color: #f6f8fa;
+                border: 1px solid #d0d7de;
+                border-radius: 6px;
+                padding: 1rem;
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .download-btn {
+                display: inline-block;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+                background-color: #C40233;
+                color: white;
+                text-decoration: none;
+                border-radius: 6px;
+                transition: background-color 0.2s;
+                border: none;
+                cursor: pointer;
+            }
+
+            .download-btn:hover {
+                background-color: #a30129;
+            }
+
+            .version-info {
+                margin-top: 0.5rem;
+                color: #57606a;
+                font-size: 0.8rem;
+            }
+
+            .features-section {
+                padding: 1rem;
+                background-color: #f6f8fa;
+                border: 1px solid #d0d7de;
+                border-radius: 6px;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto; /* Centers horizontally */
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Centers content horizontally */
+            }
+
+            .features-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 1rem;
+                width: 100%;
+                align-items: start; /* Aligns items to top */
+            }
+
+            .features-section h2 {
+                color: #C40233;
+                margin: 0 0 1rem 0;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 1200px) {
+                .features-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            @media (max-width: 768px) {
+                .features-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 480px) {
+                .features-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .feature-item {
+                text-align: center;
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .feature-icon {
+                width: 32px;
+                height: 32px;
+                fill: #C40233;
+                margin-bottom: 0.5rem;
+            }
+
+            .feature-text h3 {
+                margin: 0 0 0.25rem 0;
+                color: #24292f;
+                font-size: 1rem;
+            }
+
+            .feature-text p {
+                margin: 0;
+                color: #57606a;
+                line-height: 1.3;
+                font-size: 0.85rem;
+            }
+
+            footer {
+                padding: 0.5rem;
+                color: #57606a;
+                font-size: 0.8rem;
+                text-align: center;
+                width: 100%;
+                background-color: #f6f8fa;
+                border-top: 1px solid #d0d7de;
+                margin-top: auto; /* Pushes footer to bottom */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content-wrapper">
+                <h1>DisasterWatchPH<br><small>Responders App</small></h1>
+                <p class="tagline">
+                    Empowering Communities for Better Disaster Response and Management
+                </p>
+
+                <div class="download-container">
+                    <div class="download-section">
+                        <a href="https://github.com/ramusama09/DisasterWatchPH-Release/releases/download/Release/DisasterWatchPH.apk" class="download-btn" download>
+                            Download APK
+                        </a>
+                        <div class="version-info">
+                            Version 1.0.0 • Released December 31, 2024
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-clock-history feature-icon" viewBox="0 0 16 16">
+                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z"/>
+                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z"/>
+                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                        <div class="feature-text">
+                            <h3>Real-Time Disaster Reporting</h3>
+                            <p>Report disasters instantly with photo or video evidence up to 45 seconds.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-people-fill feature-icon" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                        </svg>
+                        <div class="feature-text">
+                            <h3>Community Feed & Notifications</h3>
+                            <p>Moderated community feed with verified disaster reports and instant notifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill feature-icon" viewBox="0 0 16 16">
+                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                        <div class="feature-text">
+                            <h3>Emergency Responder Integration</h3>
+                            <p>Specialized features for emergency responders with real-time tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-check-circle-fill feature-icon" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <div class="feature-text">
+                            <h3>User-Friendly Safety Features</h3>
+                            <p>Built-in media compression, GPS translation, and privacy protection.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-wrench-adjustable-circle-fill feature-icon" viewBox="0 0 16 16">
+                            <path d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.5 4.5 0 0 1-1.592-.29L4.747 14.2a7.03 7.03 0 0 1-2.949-2.951M12.496 8a4.5 4.5 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11q.04.3.04.61"/>
+                        </svg>
+                        <div class="feature-text">
+                            <h3>Enhanced Response Tools</h3>
+                            <p>Advanced mapping, filtering, and auto-notification systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <footer>
+                © 2024 DisasterWatchPH. All rights reserved.
+            </footer>   
+        </div>
+    </body>
+    </html>
